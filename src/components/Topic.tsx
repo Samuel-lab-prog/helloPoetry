@@ -1,7 +1,13 @@
 import helloKittyBow from '../assets/helloKittyBow.svg';
-export default function Topic({ title }: { title: string }) {
+export default function Topic({
+  title,
+  className,
+}: {
+  title: string;
+  className?: string;
+}) {
   return (
-    <div className="flex items-center w-fit">
+    <div className={`flex items-center w-fit ${className}`}>
       <img
         src={helloKittyBow}
         alt="Hello Kitty Bow"

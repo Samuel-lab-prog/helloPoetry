@@ -11,22 +11,22 @@
     @apply font-secondary bg-pink-800 text-gray-200;
   }
   h1 {
-    @apply font-primary font-bold text-7xl;
+    @apply font-primary font-bold text-6xl;
   }
   h2 {
     @apply font-primary text-4xl font-semibold;
   }
   h3 {
-    @apply font-primary text-2xl font-medium;
+    @apply font-primary text-3xl font-semibold;
   }
   h4 {
-    @apply font-primary text-xl font-medium;
+    @apply font-primary text-2xl font-semibold;
   }
   h5 {
-    @apply font-primary text-lg font-medium;
+    @apply font-primary text-xl font-semibold;
   }
   h6 {
-    @apply font-primary text-base font-semibold;
+    @apply font-primary text-lg font-semibold;
   }
   p {
     @apply font-secondary text-xs lg:text-sm;
@@ -41,7 +41,7 @@
     @apply font-secondary px-4 py-2 rounded transition-all cursor-pointer inline-flex items-center justify-center text-sm;
   }
   .btn-primary {
-    @apply bg-gray-200 text-black hover:bg-gray-400;
+    @apply bg-red-700 text-gray-200 hover:bg-red-400 border-white border;
   }
   .btn-secondary {
     @apply bg-transparent border border-gray-200 text-gray-200 hover:bg-gray-100 hover:text-black;
