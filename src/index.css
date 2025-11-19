@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Pacifico&display=swap');
+@import 'tailwindcss';
+
+@theme static {
+  --font-primary: 'Pacifico', cursive;
+  --font-secondary: 'Delius', cursive;
+}
+@layer base {
+  body {
+    @apply font-secondary bg-pink-800 text-gray-200;
+  }
+  h1 {
+    @apply font-primary font-bold text-7xl;
+  }
+  h2 {
+    @apply font-primary text-4xl font-semibold;
+  }
+  h3 {
+    @apply font-primary text-2xl font-medium;
+  }
+  h4 {
+    @apply font-primary text-xl font-medium;
+  }
+  h5 {
+    @apply font-primary text-lg font-medium;
+  }
+  h6 {
+    @apply font-primary text-base font-semibold;
+  }
+  p {
+    @apply font-secondary text-xs lg:text-sm;
+  }
+  span {
+    @apply font-secondary text-xs lg:text-sm font-bold;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply font-secondary px-4 py-2 rounded transition-all cursor-pointer inline-flex items-center justify-center text-sm;
+  }
+  .btn-primary {
+    @apply bg-gray-200 text-black hover:bg-gray-400;
+  }
+  .btn-secondary {
+    @apply bg-transparent border border-gray-200 text-gray-200 hover:bg-gray-100 hover:text-black;
+  }
+  .btn-disabled {
+    @apply cursor-not-allowed;
+  }
+  .anchor {
+    @apply cursor-pointer hover:opacity-75 transition-opacity duration-200;
+  }
+  .active-anchor {
+    @apply underline underline-offset-4 font-bold;
+  }
+}
