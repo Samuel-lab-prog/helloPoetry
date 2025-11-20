@@ -40,15 +40,11 @@ export default function Home() {
       </section>
 
       {/* Poem of the Day */}
-      <motion.h3
+      <h3
         className="p-4 text-center md:text-5xl bg-red-800"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
       >
         Poem of the Day
-      </motion.h3>
+      </h3>
 
       <section className="h-70 flex flex-col items-center justify-end px-4">
         <motion.div
@@ -63,7 +59,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="grid grid-cols-12 px-4 md:px-12 h-100 md:h-120">
+      <section className="grid grid-cols-12 px-4 md:px-12 xl:px-36 h-100 md:h-120">
 
         <motion.div
           className="col-span-6 md:col-span-7 flex flex-col justify-center"
@@ -80,7 +76,7 @@ export default function Home() {
             just starting out, we welcome you to join us in expressing your 
             creativity through the art of poetry.
           </p>
-          <Button className="w-fit">Learn More</Button>
+          <Button className="w-fit" to='/about'>Learn More</Button>
         </motion.div>
 
         <motion.div
@@ -102,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section className="grid grid-cols-12 px-4 md:px-12 h-80 md:h-120">
+      <section className="grid grid-cols-12 px-4 md:px-12 xl:px-36 h-80 md:h-120">
 
         <motion.div
           className="flex justify-center items-center col-span-6 md:col-span-5"
@@ -141,7 +137,7 @@ export default function Home() {
 
       {/* Call to Action */}
       <motion.section
-        className="px-4 h-80 flex flex-col items-center justify-center gap-y-4 bg-pink-700"
+        className="px-4 h-80 flex flex-col items-center justify-center gap-y-4 bg-pink-600"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
